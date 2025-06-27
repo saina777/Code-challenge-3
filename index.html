@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Post Pulse</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container">
+    <section class="sidebar">
+      <h2>Blog Posts</h2>
+      <ul id="postList"></ul>
+      <div class="new-post">
+        <h3>Add New Post</h3>
+        <!-- Example input with aria-label -->
+<input id="title" placeholder="Post title..." aria-label="Post title">
+<input id="author" placeholder="Author name..." aria-label="Author name">
+<input id="image" placeholder="Image URL..." aria-label="Image URL" type="url">
+<textarea id="content" placeholder="Write your post content..." aria-label="Post content"></textarea>
+        <button id="addPostBtn">Add Post</button>
+      </div>
+    </section>
+    
+    <section class="content">
+      <h1 id="mainTitle">Post Pulse</h1>
+      <p>Modern blog post management</p>
+      <div id="postDetail" class="post-detail">
+        <h2 id="postTitle"></h2>
+        <p id="postMeta"></p>
+        <img id="postImage" src="" alt="" />
+        <p id="postContent"></p>
+        <button id="editBtn">Edit</button>
+        <button id="deleteBtn">Delete</button>
+      </div>
+    </section>
+  </main>
+  <script src="index.js"></script>
+</body>
+</html>
